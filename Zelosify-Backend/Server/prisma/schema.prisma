@@ -63,3 +63,16 @@ enum Role {
   RESOURCE_MANAGER
   VENDOR_MANAGER
 }
+
+
+model Opening {
+      id                     String        @id @default(uuid())
+      tenantId               String
+      title                  String
+      description            String?
+      location               String?
+      contractType           String?
+      hiringManagerId        String
+      experienceMin          Int
+      experienceMax          Int?
+}

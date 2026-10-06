@@ -61,7 +61,7 @@ export default function Register() {
           firstName: formData.firstName,
           lastName: formData.lastName,
           phoneNumber: formData.phoneNumber,
-          companyName: formData.companyName,
+          tenantId: formData.companyName,
           department: formData.department,
           role: formData.role,
         };
@@ -299,9 +299,9 @@ export default function Register() {
             onChange={handleChange}
             className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent dark:bg-gray-900 dark:text-white transition-colors duration-200"
           >
-            <option value="USER">User</option>
-            <option value="MANAGER">Manager</option>
-            <option value="SENIOR_MANAGER">Senior Manager</option>
+            <option value="HIRING_MANAGER">/Hiring Manager/</option>
+            <option value="FINANCE MANAGER">Finance Manager</option>
+            <option value="IT_VENDOR">It Vendor</option>
             <option value="ADMIN">Admin</option>
           </select>
         </div>
